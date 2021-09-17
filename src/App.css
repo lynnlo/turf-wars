@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Baloo+Da+2&display=swap');
+
+:root {
+	--color_stock_100: #222;
+	--color_stock_200: #444;
+	--color_stock_300: #ccc;
+	--color_stock_400: #eee;
+
+	--color_primary: #2b9ecc;
+	--color_secondary: #e47d29;
+}
+
+body {
+	margin: 0;
+	background: var(--color_stock_100);
+	color: var(--color_stock_400);
+
+	display: flex;
+	flex-direction: column;
+
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+	font-family: 'Baloo Da 2', cursive;
+
+	width: 100vw;
+	height: 100vh;
+}
+
+h1 {
+	font-size: clamp(30px, 6vw, 90px);
+
+	transition: all 200ms;
+}
+
+p {
+	font-size: clamp(10px, 2vw, 30px);
+
+	transition: all 200ms;
+}
+
+button {
+	background: var(--color_primary);
+	color: var(--color_stock_400);
+
+	border: none;
+	border-radius: 1em;
+
+	padding: 0.5em 2em;
+
+	font-family: 'Baloo Da 2', cursive;
+	font-size: clamp(20px, 4vw, 60px);
+
+	transition: all 200ms;
+}
+
+button:hover {
+	filter: brightness(1.2);
+
+	transform: scale(1.05);
+}
+
+button:active {
+	transform: scale(1.1);
+}
+
+.Field {
+	display: grid;
+
+	grid-template-columns: repeat(12, auto);
+}
+
+.Square button {
+	font-size: 1vw;
+
+	margin: 0.25em;
+
+	padding: 1vw 1.5vw;
+}
+
+.text {
+	margin: 0 15vw;
+}
+
+.none {
+	background-color: var(--color_stock_300);
+	color: var(--color_stock_200);
+}
+
+.blue {
+	background-color: var(--color_primary);
+	color: var(--color_stock_400);
+}
+
+.orange {
+	background-color: var(--color_secondary);
+	color: var(--color_stock_400);
+}
+
+.disable {
+	filter: brightness(0.8)
+}
+
+.names {
+	display: flex;
+
+	flex-direction: row;
+
+	width: 100%;
+}
+
+.names h1, p {
+	font-size: 2vw;
+	
+	flex-basis: 50%;
+	
+	margin: 0;
+}
+
+.names input {
+	background-color: var(--color_stock_200);
+	color: var(--color_stock_400);
+
+	font-size: 2vw;
+
+	margin: 1vw;
+	
+	border: none;
+
+	padding: 1vw;
+}
